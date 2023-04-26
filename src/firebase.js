@@ -1,7 +1,7 @@
 // import { initializeApp } from "firebase/app";
-// import { getAuth } from "firebase/auth";
-// import { getStorage } from "firebase/storage";
-// import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyC00RO3kZAL4xK4EJd9kQFfqPzFW9iSvn8",
@@ -13,18 +13,9 @@
 //   measurementId: "G-9RV6EVRH4X"
 // };
 
-// // Initialize Firebase
-// export const app = initializeApp(firebaseConfig);
-// export const auth = getAuth();
-// export const storage = getStorage();
-// export const db = getFirestore()
 
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -38,6 +29,16 @@ const firebaseConfig = {
   measurementId: "G-84BPFM4CYB"
 };
 
+
+
+
+
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth();
+export const storage = getStorage();
+export const db = getFirestore()
+
+
+
+
